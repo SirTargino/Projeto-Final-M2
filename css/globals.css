@@ -17,3 +17,7 @@
 h1 {
     color: var(--pumpkin);
 }
+
+h2 {
+    color: var(--off-white);
+}
