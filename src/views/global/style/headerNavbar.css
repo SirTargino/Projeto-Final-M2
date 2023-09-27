@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--violet);
+    background-color: var(--violet-darker);
     padding: 13px;
 }
 
