@@ -1,0 +1,21 @@
+@import "../../global/style/extends.css";
+
+.block1Home .texts{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    font-size: 120%;
+}
+
+.block1Home .texts h1{
+    color: var(--off-white);
+}
+
+.block1Home .texts h2{
+    color: var(--pumpkin);
+}
+
+.block1Home img {
+    width: 100%;
+}
+

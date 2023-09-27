@@ -3,5 +3,10 @@
     --black: rgb(9, 7, 10);
     --shadow-black: rgba(9, 7, 10, 0.2);
     --violet: rgb(118, 37, 169);
+    --violet-light: rgb(196, 101, 255);
+    --violet-dark: rgb(55, 8, 73);
+    --violet-darker: rgb(36, 1, 56);
     --pumpkin: rgb(238, 65, 57);
+    --pumpkin-dark: rgb(124, 19, 14);
+    --pumpkin-light: rgb(247, 138, 133);
 }
