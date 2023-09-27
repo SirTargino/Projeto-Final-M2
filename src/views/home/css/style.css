@@ -19,3 +19,15 @@
     width: 100%;
 }
 
+@media screen and (max-width: 500px){
+    .texts {
+        text-align: center;
+        text-shadow: 1px 5px 10px black;
+
+    }
+    .block1Home img {
+        filter: brightness(60%);
+    };
+}
+
+
