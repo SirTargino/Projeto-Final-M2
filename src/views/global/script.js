@@ -8,4 +8,3 @@ openNav.addEventListener('click', () => {
  myNav.addEventListener('click', () => {
      myNav.style.width = "0"
  })
-
