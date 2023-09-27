@@ -1,0 +1,140 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--violet-darker);
+    padding: 13px;
+}
+
+header #logo{
+    margin-left: 20px;
+    width: 9%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    background-color: var(--violet-dark);
+    padding: 10px;
+    border-radius: 7px;
+    color:#fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav ul li a:hover{
+    background-color: var(--pumpkin);
+}
+
+/* Menu Burguer */
+
+.nav-button{
+    display: none;
+}
+
+.overlay{
+    display: none;
+}
+
+
+@media(max-width: 500px){
+
+    header #logo{
+        width: 40%;
+        align-self: center;
+        padding : 10px;
+        margin-left: 30%;
+    }
+
+    .overlay-content #logo{
+        width: 40%;
+        margin-right: 30%;
+    }
+
+    .nav-button{
+        border: 0;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 8px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .overlay{
+        width: 0;
+        height: 100%;
+        background-color: rgba(97, 50, 124, 0.856);
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        transition: all 0.5s ;
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    header h2{
+        display: none;
+    }
+
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60%;
+    }
+
+    .overlay-content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .overlay-content ul li a{
+        cursor: pointer;
+        background-color: var(--violet-dark);
+        color: aliceblue;
+        padding:10px;
+        border-radius: 7px;
+        transition: 0.5s;
+    }
+
+    .overlay-content ul li a:hover{
+        background-color: var(--pumpkin);
+    }
+
+    .btn{
+        
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .closebtn{
+        font-size: 1.5em;
+    }
+}
