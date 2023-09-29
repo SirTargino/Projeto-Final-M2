@@ -82,6 +82,7 @@ header #logo{
         margin: 8px;
         cursor: pointer;
         display: block;
+        margin-left: 15%;
     }
     
     .overlay{
@@ -98,6 +99,10 @@ header #logo{
     }
 
     .nav{
+        display: none;
+    }
+
+    .donation{
         display: none;
     }
 
@@ -147,4 +152,5 @@ header #logo{
     .closebtn{
         font-size: 1.5em;
     }
+    
 }
