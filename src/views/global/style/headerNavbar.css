@@ -4,6 +4,8 @@ header{
     align-items: center;
     background-color: var(--black);
     padding: 13px;
+    justify-content: space-between;
+    overflow-y: hidden;
 }
 
 header #logo{
@@ -20,7 +22,7 @@ header #logo{
 
 .nav ul, .donation{
     display: flex;
-    gap:70px;
+    /* gap:70px; */
 }
 
 .nav ul li, .donation{
@@ -37,12 +39,16 @@ header #logo{
     color:#fff;
     transition: 0.5s;
     cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .donation{
     border-radius: 0px;
     background-color: var(--pumpkin-dark);
     border: transparent;
-    margin-left: 460px;
+    margin-left: 0px;
     }
     
 .nav ul li a:hover{
