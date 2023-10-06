@@ -1,10 +1,11 @@
 header{
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--black);
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -48,9 +49,10 @@ header #logo{
 }
 .donation{
     border-radius: 0px;
-    background-color: var(--pumpkin-dark);
+    background-color: var(--pumpkin);
     border: transparent;
-   
+    color: var(--off-white);
+    border-radius: 10px;
     }
     
 .nav ul li a:hover{
