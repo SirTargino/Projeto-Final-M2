@@ -11,24 +11,28 @@ header #logo{
     width: 9%;
 }
 
+a {
+    text-decoration: none;
+    color: white; 
+}
 
-.nav, .donation{
+.nav, .registerButton{
     margin-left: 600px;
     display: flex;
     align-items: center;
 }
 
-.nav ul, .donation{
+.nav ul, .registerButton{
     display: flex;
     gap:70px;
 }
 
-.nav ul li, .donation{
+.nav ul li, .registerButton{
     display: flex;
     list-style: none;
 }
 
-.nav ul li a, .donation{
+.nav ul li a, .registerButton{
     text-decoration: none;
     background-color: var(--shadow-black);
     padding: 40px;
@@ -38,7 +42,7 @@ header #logo{
     transition: 0.5s;
     cursor: pointer;
 }
-.donation{
+.registerButton{
     border-radius: 0px;
     background-color: var(--pumpkin-dark);
     border: transparent;
@@ -48,7 +52,7 @@ header #logo{
 .nav ul li a:hover{
     background-color: var( --violet-darker);
 }
-.donation:hover{
+.registerButton:hover{
     background-color: var(--pumpkin-light);
 }
 /* Menu Burguer */
@@ -102,7 +106,7 @@ header #logo{
         display: none;
     }
 
-    .donation{
+    .registerButton{
         display: none;
     }
 
