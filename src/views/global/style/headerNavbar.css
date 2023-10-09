@@ -1,9 +1,12 @@
 header{
+    width: 100vw;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--violet-darker);
-    padding: 13px;
+    background-color: var(--black);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 header #logo{
@@ -12,9 +15,16 @@ header #logo{
 }
 
 .nav{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    
 }
+/* .nav, .donation{
+    display: flex;
+    align-items: center;
+} */
 
 .nav ul{
     display: flex;
@@ -23,23 +33,34 @@ header #logo{
 }
 
 .nav ul li{
+    display: flex;
     list-style: none;
 }
 
-.nav ul li a{
+.nav ul li a, .donation{
     text-decoration: none;
-    background-color: var(--violet-dark);
-    padding: 10px;
+    background-color: var(--shadow-black);
+    padding: 40px;
     border-radius: 7px;
+    font-size: 20px;
     color:#fff;
     transition: 0.5s;
     cursor: pointer;
 }
-
-.nav ul li a:hover{
+.donation{
+    border-radius: 0px;
     background-color: var(--pumpkin);
+    border: transparent;
+    color: var(--off-white);
+    border-radius: 10px;
+    }
+    
+.nav ul li a:hover{
+    background-color: var( --violet-darker);
 }
-
+.donation:hover{
+    background-color: var(--pumpkin-light);
+}
 /* Menu Burguer */
 
 .nav-button{
@@ -49,7 +70,6 @@ header #logo{
 .overlay{
     display: none;
 }
-
 
 @media(max-width: 500px){
 
@@ -72,6 +92,7 @@ header #logo{
         margin: 8px;
         cursor: pointer;
         display: block;
+        margin-left: 15%;
     }
     
     .overlay{
@@ -88,6 +109,10 @@ header #logo{
     }
 
     .nav{
+        display: none;
+    }
+
+    .donation{
         display: none;
     }
 
@@ -137,4 +162,5 @@ header #logo{
     .closebtn{
         font-size: 1.5em;
     }
+    
 }
