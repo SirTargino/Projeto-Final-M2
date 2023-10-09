@@ -1,7 +1,12 @@
 @import "../../global/style/extends.css";
 
+body{
+    overflow-x: hidden;
+    background-color: var(--black);
+}
+
 .block1Home{
-    width: 100%;
+    width: 100vw;
     height: 600px;
     background-image: url("../../../../assets/images/pexels-shvets-production-7562023.jpg");
     background-size: cover;
@@ -52,7 +57,7 @@ p{
 /* sobre */
 
 section{
-    width: 100%;
+    width: 100vw;
     height: 600px;
 }
 
@@ -134,7 +139,7 @@ section .conteiner_about .about .action button:hover{
 /* STUDANTES */
 
 .studants{
-    width: 100%;
+    width: 100vw;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -181,9 +186,10 @@ section .conteiner_about .about .action button:hover{
 /* TRANING */
 
 .traning{
-    width: 100%;
+    width: 100vw;
     height: 600px;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-image: url("../../../../assets/images/pexels-tima-miroshnichenko-6499021.jpg");
     background-size: cover;
     background-position: center;
@@ -230,8 +236,18 @@ section .conteiner_about .about .action button:hover{
         text-align: center;
         text-shadow: 1px 5px 10px black;
     }
+    .image{
+        display: none;
+    }
+    section .conteiner_about .about{
+        width: 100%;
+    }
+    section .conteiner_about .about .information{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .studants .text_studantes{
+        margin-right: 0;
+    }
 }
-
-
-
-
