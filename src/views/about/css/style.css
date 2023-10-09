@@ -1,0 +1,48 @@
+
+@import "../../global/style/extends.css";
+
+body{
+    background-image: url(../../../../assets/images/pexels-tima-miroshnichenko-6499003.jpg);
+    background-size: cover;
+    background-position:center center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#main{
+    height: 90vh;
+    width: 70vw;
+    background-color: var(--violet-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logomain{
+    height:10vh ;
+
+}
+
+#text {
+    color: var(--off-white);
+    text-align: left;
+    padding: 45px;
+}
+
+#main-mother{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:500px){
+    #text{
+        padding: 10px;
+
+    }
+    #main{
+        width: 100vw;
+    }
+}
