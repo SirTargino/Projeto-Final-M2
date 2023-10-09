@@ -5,7 +5,7 @@
 }
 
 footer{
-    height: 100px;
+    height: 10vh;
     width: 100vw;
     background-color: var(--black);
     color: var(--off-white);

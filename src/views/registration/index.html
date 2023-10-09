@@ -28,6 +28,8 @@
                     <li><a href="../about/index.html">Sobre</a></li>
                     <li><a href="../registration/index.html">Cadastro</a></li>
                 </ul>
+
+                <button class="registerButton"><a href="../registration/index.html">Registre-se</a></button>
             </div>
 
         </div>
@@ -43,22 +45,23 @@
                 <li><a href="../registration/index.html">Cadastro</a></li>
             </ul>
         </nav>
-
-        <button class="registerButton"><a href="../registration/index.html">Registre-se</a></button>
     </header>
     <main>
-        <div id="form">
-            <h1>&lt;WANT TO BE ONE OF OUR STUDENTS/&gt;</h1>
-            <br>
-            <input type="text" name="" id="" placeholder="Name:" id="nameInput">
-            <input type="text" name="" id="" placeholder="Age:" id="ageInput">
-            <input type="text" name="" id="" placeholder="Gender:" id="genderInput">
-            <input type="text" name="" id="" placeholder="E-mail:" id="mailInput">
-            <input type="text" name="" id="" placeholder="Telephone Number" id="phoneInput">
-            <br>
-            <button><strong>SEND</strong></button>
-        </div>
-        <div id="image">
+        <div id="container">
+            <div id="form">
+                <h1>&lt;WANT TO BE ONE OF OUR STUDENTS/&gt;</h1>
+                <br>
+                <input type="text" name="" placeholder="Name:" id="nameInput">
+                <input type="text" name="" placeholder="Age:" id="ageInput">
+                <input type="text" name="" placeholder="Gender:" id="genderInput">
+                <input type="text" name="" placeholder="E-mail:" id="mailInput">
+                <input type="text" name="" placeholder="Telephone Number" id="phoneInput">
+                <input type="password" name="" placeholder="Password" id="passwordInput">
+                <br>
+                <button id="send"><strong>SEND</strong></button>
+            </div>
+            <div id="image">
+            </div>
         </div>
     </main>
     <footer>
@@ -67,8 +70,10 @@
         <img src="../../../assets/icons/svg/logo-github.svg" alt="" id="footergithub">
 
     </footer>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
     <script src="../global/script.js"></script>
+    <script src="../../models/Person.model.js"></script>
+    <script src="../../controllers/createPerson.controller.js"></script>
 </body>
 
 </html>
