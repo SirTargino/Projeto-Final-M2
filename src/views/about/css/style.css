@@ -2,7 +2,7 @@
 @import "../../global/style/extends.css";
 
 body{
-    background-image: url(../../../../assets/images/pexels-tima-miroshnichenko-6499003.jpg);
+    background-image: url(../../../assets/images/pexels-tima-miroshnichenko-6499003.jpg);
     background-size: cover;
     background-position:center center;
     text-align: center;
