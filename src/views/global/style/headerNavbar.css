@@ -1,12 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 header{
-    width: 100vw;
-    height: 80px;
     display: flex;
     align-items: center;
-    background-color: var(--black);
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    justify-content: space-between;
+    background-color: var(--violet);
+    background-color: var(--violet-darker);
+    padding: 20px;
 }
 
 header #logo{
@@ -15,16 +19,9 @@ header #logo{
 }
 
 .nav{
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
 }
-/* .nav, .donation{
-    display: flex;
-    align-items: center;
-} */
 
 .nav ul{
     display: flex;
@@ -33,34 +30,23 @@ header #logo{
 }
 
 .nav ul li{
-    display: flex;
     list-style: none;
 }
 
-.nav ul li a, .donation{
+.nav ul li a{
     text-decoration: none;
-    background-color: var(--shadow-black);
-    padding: 40px;
+    background-color: var(--violet-dark);
+    padding: 10px;
     border-radius: 7px;
-    font-size: 20px;
     color:#fff;
     transition: 0.5s;
     cursor: pointer;
 }
-.donation{
-    border-radius: 0px;
-    background-color: var(--pumpkin);
-    border: transparent;
-    color: var(--off-white);
-    border-radius: 10px;
-    }
-    
+
 .nav ul li a:hover{
-    background-color: var( --violet-darker);
+    background-color: var(--pumpkin);
 }
-.donation:hover{
-    background-color: var(--pumpkin-light);
-}
+
 /* Menu Burguer */
 
 .nav-button{
@@ -72,19 +58,16 @@ header #logo{
 }
 
 @media(max-width: 500px){
-
     header #logo{
         width: 40%;
         align-self: center;
         padding : 10px;
         margin-left: 30%;
     }
-
     .overlay-content #logo{
         width: 40%;
         margin-right: 30%;
     }
-
     .nav-button{
         border: 0;
         border-radius: 4px;
@@ -92,7 +75,6 @@ header #logo{
         margin: 8px;
         cursor: pointer;
         display: block;
-        margin-left: 15%;
     }
     
     .overlay{
@@ -107,19 +89,12 @@ header #logo{
         transition: all 0.5s ;
         display: block;
     }
-
     .nav{
         display: none;
     }
-
-    .donation{
-        display: none;
-    }
-
     header h2{
         display: none;
     }
-
     .overlay-content{
         position: relative;
         top: 25%;
@@ -129,14 +104,12 @@ header #logo{
         flex-direction: column;
         margin-bottom: 60%;
     }
-
     .overlay-content ul{
         display: flex;
         flex-direction: column;
         gap: 2em;
         margin-top: 2em;
     }
-
     .overlay-content ul li a{
         cursor: pointer;
         background-color: var(--violet-dark);
@@ -145,11 +118,9 @@ header #logo{
         border-radius: 7px;
         transition: 0.5s;
     }
-
     .overlay-content ul li a:hover{
         background-color: var(--pumpkin);
     }
-
     .btn{
         
         width: 100px;
@@ -158,9 +129,7 @@ header #logo{
         align-items: center;
         justify-content: center;
     }
-
     .closebtn{
         font-size: 1.5em;
     }
-    
 }
