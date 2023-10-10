@@ -54,7 +54,9 @@ body{
 p{
     color:rgb(238, 65, 57)
 }
-
+footer p{
+    color: white;
+}
 /* sobre */
 
 section{
