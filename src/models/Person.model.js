@@ -1,13 +1,12 @@
-class Person {
-    #password
-    constructor(name, age, gender, location, email, password, id) {
+
+class Person{
+    constructor(name, age, gender, email, phone, password, id) {
         this.name = name;
         this.age = age;
         this.gender = gender;
-        this.location = location;
         this.email = email;
-        this.#password = password
+        this.password = password;
+        this.phone = phone;
         this.id = id;
     }
-
 }
